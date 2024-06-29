@@ -71,14 +71,7 @@ export default function App() {
 				<button onClick={addCaption}>Add Caption</button>
 			</div>
 			<div className="video-section">
-				<video
-					controls
-					ref={videoRef}
-					onTimeUpdate={displayCaption}
-					onError={() =>
-						alert("Error loading video. Please check the URL and try again.")
-					}
-				>
+				<video controls ref={videoRef} onTimeUpdate={displayCaption}>
 					<source src={videoUrl} type="video/mp4" />
 				</video>
 				<div id="caption-display" ref={captionDisplayRef}></div>
