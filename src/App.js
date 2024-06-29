@@ -51,6 +51,10 @@ export default function App() {
 		<div className="container">
 			<div className="input-section">
 				<h1>Add Captions to Video</h1>
+				<p>
+					Demo URL :
+					http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4{" "}
+				</p>
 				<input
 					value={videoUrl}
 					type="text"
